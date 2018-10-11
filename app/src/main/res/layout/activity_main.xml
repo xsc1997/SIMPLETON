@@ -142,7 +142,6 @@
                 android:id="@+id/todayInfo2_left"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -157,7 +156,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
                 android:layout_toRightOf="@id/todayInfo2_left">
                 //天气时间
                 <TextView
@@ -173,7 +171,6 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="22℃～29℃"
-                    android:layout_marginTop="8dp"
                     android:textColor="#FFFFFF"
                     android:textSize="20.0sp">
                 </TextView>
@@ -183,7 +180,6 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="晴"
-                    android:layout_marginTop="8dp"
                     android:textColor="#FFFFFF"
                     android:textSize="20.0sp">
                 </TextView>
@@ -192,12 +188,31 @@
                     android:id="@+id/todayInfo2_windPower"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="风力3级"
                     android:textColor="#FFFFFF"
                     android:textSize="20.0sp">
                 </TextView>
             </LinearLayout>
         </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_weilaiWeather"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@id/relative_todayWeather2">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"/>
+            <LinearLayout
+                android:id="@+id/guide_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+            </LinearLayout>
     </RelativeLayout>
+</RelativeLayout>
 </RelativeLayout>
